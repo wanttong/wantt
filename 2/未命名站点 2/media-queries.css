@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+.video  { width: 100%;		height: auto;		min-height: 300px;	}
+	#pagewrap {	width: 95%;	}
+	#header {	height: auto;	}
+	#searchform {	position: absolute;	top: 5px;right: 0;	z-index: 100;height: 40px;	}
+	#searchform #s {	width: 70px;	}
+	#searchform #s:focus {	width: 150px;	}
+	#main-nav {	position: static;	}
+	#site-logo {	margin: 15px 100px 5px 0;	position: static;	}
+	#site-description {	margin: 0 0 15px;	position: static;	}
+	#content {	width: auto;	float: none;	margin: 20px 0;	}
+	#sidebar {	width: 100%;	margin: 0;	float: none;	}
+	#sidebar .widget {	padding: 3% 4%;	margin: 0 0 10px;	}
+@media screen and (max-width: 480px) {
+	html {	-webkit-text-size-adjust: none;	}
+	#main-nav a {	font-size: 90%;		padding: 10px 8px;	}
+}
+	(4) 使用Dreamweaver或记事本设计在index.html页面文件中增加并链接上述样式文件的代码，放在<head>标记中，代码如下（粗体部分）：
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>手机网站首页示例</title>
+<!-- main css -->
+<link href="style.css" rel="stylesheet" type="text/css">
+<!-- media queries css -->
+<link href="media-queries.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="pagewrap">
+
